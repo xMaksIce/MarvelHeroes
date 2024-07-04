@@ -8,10 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.marvelheroes.ui.theme.MarvelHeroesTheme
-import com.example.marvelheroes.ui.screens.Home
-import com.example.marvelheroes.ui.screens.GreenGoblin
-import com.example.marvelheroes.ui.screens.Kraven
-import com.example.marvelheroes.ui.screens.Electro
+import com.example.marvelheroes.ui.screens.*
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
