@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
@@ -38,13 +39,14 @@ fun GreenGoblin(navController: NavController) {
                 .align(Alignment.BottomStart)
         ) {
             Text(
-                text = "Green Goblin", color = Color.Red, fontSize = 32.sp, modifier = Modifier
-                    .padding(start = 30.dp, top = 20.dp)
+                text = "Green Goblin", color = Color.Red, fontSize = 32.sp,
+                modifier = Modifier.padding(start = 30.dp, top = 20.dp)
             )
             Text(
                 text = "After experimenting on himself with an unstable chemical, Norman developed an alternate, evil personality known as Green Goblin",
                 color = Color.Red,
                 fontSize = 24.sp,
+                textAlign = TextAlign.Justify,
                 modifier = Modifier
                     .padding(start = 30.dp, end = 30.dp, top = 20.dp, bottom = 40.dp)
             )
@@ -83,7 +85,11 @@ fun Kraven(navController: NavController) {
                     .padding(start = 30.dp, top = 20.dp)
             )
             Text(
-                text = "Kraven the Hunter is a world-famous explorer and brutal game hunter who can never resist a challenge", color = Color.Yellow, fontSize = 24.sp, modifier = Modifier
+                text = "Kraven the Hunter is a world-famous explorer and brutal game hunter who can never resist a challenge",
+                color = Color.Yellow,
+                fontSize = 24.sp,
+                textAlign = TextAlign.Justify,
+                modifier = Modifier
                     .padding(start = 30.dp, end = 30.dp, top = 20.dp, bottom = 40.dp)
             )
         }
@@ -121,7 +127,11 @@ fun Electro(navController: NavController) {
                     .padding(start = 30.dp, top = 20.dp)
             )
             Text(
-                text = "Electro, with his newfound powers, turns his focus on vengeance towards the company that neglected him, Oscorp, and the people he feels betrayed him, including Spider-Man", color = Color.Green, fontSize = 24.sp, modifier = Modifier
+                text = "Electro, with his newfound powers, turns his focus on vengeance towards the company that neglected him, Oscorp, and the people he feels betrayed him, including Spider-Man",
+                color = Color.Green,
+                fontSize = 24.sp,
+                textAlign = TextAlign.Justify,
+                modifier = Modifier
                     .padding(start = 30.dp, end = 30.dp, top = 20.dp, bottom = 40.dp)
             )
         }

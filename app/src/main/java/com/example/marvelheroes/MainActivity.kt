@@ -13,15 +13,14 @@ import com.example.marvelheroes.ui.screens.*
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
             val navController = rememberNavController()
             MarvelHeroesTheme {
                 NavHost(navController = navController, startDestination = "home") {
-                    composable("Home") { Home(navController)}
-                    composable("Green Goblin") { GreenGoblin(navController) }
-                    composable("Kraven") { Kraven(navController) }
-                    composable("Electro") { Electro(navController) }
+                    composable("home") { Home(navController)}
+                    composable("green goblin") { GreenGoblin(navController) }
+                    composable("kraven") { Kraven(navController) }
+                    composable("electro") { Electro(navController) }
                 }
             }
         }

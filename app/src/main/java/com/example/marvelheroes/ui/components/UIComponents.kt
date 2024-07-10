@@ -70,7 +70,7 @@ fun CharacterImage(name: String, img: Int, navigationController: NavController) 
             text = name,
             color = Color.White,
             fontSize = 32.sp,
-            modifier = Modifier.padding(start = 30.dp, bottom = 40.dp)
+            modifier = Modifier.padding(start = 30.dp, bottom = 20.dp)
         )
     }
 }
